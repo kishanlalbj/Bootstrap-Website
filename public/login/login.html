@@ -1,0 +1,10 @@
+<div id="login">
+	<div class="container">
+		<label>Email/Username</label>
+		<input type="text" name="name" ng-model="username" class="form-control inputbox" required >
+		<label>Password</label>
+		<input type="password" name="password" ng-model="password" class="form-control inputbox" required>
+		<p ng-show="message" style="color:red">{{message}}</p>
+		<input type="submit" name="submit" ng-click="signin(username,password)" id="submitbtn" class="btn btn-primary">
+	</div>
+</div>

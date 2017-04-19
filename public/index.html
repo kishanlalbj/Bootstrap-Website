@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pitney Bowes</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body ng-app="pitney">
+	<nav class="navbar navbar-inverse" role = "navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" ui-sref="index">
+					<img src="images/logo.svg">
+				</a>
+
+				<div class="navbar-toggle" data-toggle="collapse" data-target="#nav-collapse" id="menubtn">
+					<span class="icon-bar bar1"></span>
+					<span class="icon-bar bar2"></span>
+					<span class="icon-bar bar3"></span>	
+				</div>
+			</div>
+			
+			<div class="collapse navbar-collapse" id="nav-collapse" >
+				<ul class="nav navbar-nav navbar-right">
+					<li><a ui-sref="index.postage" class="drop" data-toggle="collapse" data-target="#nav-collapse">Postage</a></li>
+					<li><a ui-sref="index.online" class="drop" data-toggle="collapse" data-target="#nav-collapse">Online</a></li>
+					<li><a href="#" class="drop" data-toggle="collapse" data-target="#nav-collapse">Support</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div ui-view="content"></div>
+	<script type="text/javascript" src="angular/angular.js"></script>
+	<script type="text/javascript" src="angular-ui-router/release/angular-ui-router.js"></script>
+	<script type="text/javascript" src="jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="bootstrap/dist/js/bootstrap.js"></script>
+	<script type="text/javascript" src="pitneybowes.js"></script>
+	<!-- <script type="text/javascript">
+		function myanimate() {
+			x.classList.toggle("change");
+			console.log("changed");
+		}
+	</script> -->
+
+	<script type="text/javascript">
+		$("#menubtn").click(function(){
+			$("#menubtn").toggleClass("change");
+			console.log("menu changed");
+		})
+
+		$(".drop").click(function(){
+			$("#menubtn").toggleClass("change");
+			console.log("list changed menu");
+		})
+	</script>
+</body>
+</html>

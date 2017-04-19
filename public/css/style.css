@@ -1,0 +1,131 @@
+body {
+  background: linear-gradient(90deg, #3e53a4, #cf0989);
+  width: 100%;
+  height: 100%; }
+
+.navbar {
+  background-color: transparent;
+  background: transparent;
+  border-color: transparent;
+  border-radius: 0px; }
+
+ul.nav.navbar-nav li a {
+  color: #fff;
+  font-size: 20px; }
+
+#nav-collapse {
+  padding-top: 15px;
+  box-shadow: none;
+  border: 0px; }
+
+#shipLabels img {
+  height: 75px;
+  width: 110px;
+  margin: 15px; }
+
+#shipLabelForm {
+  padding-top: 15px;
+  padding-right: 15px; }
+
+#yourApps {
+  margin: 0px; }
+
+#popularTopic {
+  border-left: 1px solid grey; }
+
+#goToFullApp {
+  padding-top: 15px; }
+
+#insightsReport {
+  padding-top: 15px; }
+
+#menubtn {
+  padding-top: 20px;
+  border: 0px;
+  background: transparent; }
+
+.navbar-header {
+  float: none; }
+
+.navbar-toggle {
+  display: block; }
+
+.navbar-collapse.collapse {
+  display: none !important; }
+
+.navbar-nav {
+  float: none !important; }
+
+.navbar-nav > li {
+  float: none; }
+
+.navbar-collapse.collapse.in {
+  display: block !important; }
+
+.navbar-text {
+  float: right;
+  margin-right: 15px;
+  margin-left: 0px; }
+
+.bar1 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.3s; }
+
+.bar2 {
+  width: 30px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.3s; }
+
+.bar3 {
+  width: 25px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.3s; }
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 4px);
+  transform: rotate(-45deg) translate(-5px, 4px); }
+
+.change .bar2 {
+  opacity: 0; }
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -7px);
+  transform: rotate(45deg) translate(-8px, -7px); }
+
+#login {
+  margin-top: 10%;
+  margin-left: 30%; }
+
+.navbar-toggle {
+  display: block; }
+
+#submitbtn {
+  margin-top: 20px;
+  margin-left: 18%;
+  border-radius: 15px; }
+
+@media (max-width: 768px) {
+  .inputbox {
+    width: 100%;
+    height: 50px; }
+
+  #login {
+    margin-left: 0%;
+    padding: 10%; }
+
+  #submitbtn {
+    margin-top: 20px;
+    margin-left: 40%; } }
+@media (min-width: 768px) {
+  .inputbox {
+    width: 50%;
+    height: 50px; } }
+
+/*# sourceMappingURL=style.css.map */

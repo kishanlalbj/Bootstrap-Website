@@ -1,0 +1,185 @@
+<div class="container">
+
+	<div id="breadcrumb">
+		<ul class="breadcrumb">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Your Account</a></li>
+		</ul>
+	</div>
+
+	<div id="yourApps" class="row">
+		<section class="panel panel-default">
+			<!-- <h1>Your Apps</h1> -->
+			<header class="panel-heading">
+				<h3 class="text-primary panel-title">Your Apps</h3>
+			</header>
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-xs-6">
+						<h3>SendPro <sup>TM</sup></h3>
+					</div>
+					<div class="col-xs-6">
+						<a href="http://shipping-qa.horizon.pitneycloud.com/api/v1/trackwidget/00ua55qi40jSPCuc10h7@pb/login"  id="goToFullApp" class="link pull-right public" data-element-hide="readOnlyView">
+							Go to full app
+							<span class="fa-stack">
+								<i class="fa fa-circle-thin fa-stack-2x"></i>
+								<i class="fa fa-chevron-right fa-stack-1x" aria-hidden="true"></i>
+							</span>
+						</a>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-sm-7 col-xs-12">
+						<p>Enroll to print USPS shipping labels and save:</p>
+						<div id="shipLabels">
+							<a href=""><img src="images/fedex.jpg" class="img-thumbnail" alt="FedEx"></a>
+							<a href=""><img src="images/ups.jpg" class="img-thumbnail" alt="UPS"></a>
+							<a href=""><img src="images/usps.jpg" class="img-thumbnail" alt="USPS"></a>
+						</div>
+					</div>
+					<div class="col-sm-5 col-xs-12">
+						<p>Track Shipments</p>
+						<div  class="input-group" id="shipLabelForm">
+							<div class="input-group-btn dropdown">
+								<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									{{selectedShipLabel}}
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+									<li ng-repeat="a in shipmentLabelList"><a ng-click="dropboxitemselected(a)">{{a}}</a></li>
+								</ul>
+							</div>
+							<input type="text" class="form-control" name="x" placeholder="Tracking Number">
+							<span class="input-group-btn">
+								<button class="btn btn-primary" type="button">Track</button>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<div id="" class="row">
+		<div id="yourFinancials" class="col-sm-6 col-xs-12">
+			<section class="panel panel-default">
+				<header class="panel-heading">
+					<h3 class="text-primary panel-title">Your Financials</h3>
+				</header>
+				<div class="panel-body">
+					<p>...</p>
+				</div>
+			</section>
+		</div>
+		<div id="previousProducts" class="col-sm-6 col-xs-12">
+			<section class="panel panel-default">
+				<header class="panel-heading">
+					<h3 class="text-primary panel-title">Previously Ordered Products</h3>
+				</header>
+				<div class="panel-body">
+					<p>...</p>
+				</div>
+			</section>
+		</div>
+	</div>
+
+
+	<div id="yourAnalytics">
+		<section class="panel panel-default">
+			<header class="panel-heading">
+				<h3 class="text-primary panel-title">Your Analytics and Insights Report</h3>
+			</header>
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-md-7 col-xs-12">
+						<h3>Mailing and Shipping Postage Spent | Monthly</h3>
+						<p>Switch View (Business Partner Number/ Location): <a href="#">121 BARNARD ST<span class="caret"></span></a></p>
+						<div id="analyticsChart">
+						</div>
+					</div>
+					<div id="insightsReport" class="col-md-5 col-xs-12">
+						<h4>What could you do to achieve better savings?</h4>
+						<ol>
+							<li>
+								To help you increase open rates, envelope messages enable you to customize messages on every envelope, click here for more information, or access via Your Account page.
+								Learn <a href="#">More</a>
+							</li>
+							<li>
+								If you use First Class Mail then you may qualify for additional postage savings of up to 33% with Pitney Bowes Presort Services.
+								Learn <a href="#">More</a>
+							</li>
+						</ol>
+						<a href="https://smbqa.bigdatadev.pitneycloud.com/oidc.html?pageId=report&amp;selectedBpn=0010013968&amp;locale=en-US" class="link text-large public" data-element-hide="readOnlyView">
+							<b class="vcenter">View Full Report
+								<span class="fa-stack">
+									<i class="fa fa-circle-thin fa-stack-2x"></i>
+									<i class="fa fa-chevron-right fa-stack-1x" aria-hidden="true"></i>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div id="supportArticles">
+			<section class="panel panel-default">
+				<header class="panel-heading">
+					<h3 class="text-primary panel-title">Support Articles</h3>
+				</header>
+				<div class=" row panel-body">
+					<div class="col-sm-8 col-xs-12">
+						<h3>Search for a Topic</h3>
+						<div  class="input-group" id="supportForm">
+							<input type="text" class="form-control" name="x" placeholder="Enter keywords to find help topics">
+							<span class="input-group-btn">
+								<button class="btn btn-primary" type="button">Search</button>
+							</span>
+						</div>
+						<br>
+						<a href="#">Create a case</a>
+					</div>
+					<div id="popularTopic" class="col-sm-4 col-xs-12">
+						<h3>Popular Topics</h3>
+						<p><a href="">Updating Company Information</a></p>
+						<p><a href="">Updating Your Credit Card</a></p>
+						<p><a href="">Identifying your Pitney Bowes Account Number</a></p>
+						<p><a href="">Pitneybowes.com Account FAQs</a></p>
+						<button type="button" class="btn btn-primary">View All Articles</button>
+					</div>
+
+				</div>
+			</section>
+		</div>
+
+
+<!-- <div class="container">
+	<div class="panel-group column">
+		<div class="col-sm-6">
+			<div class="panel panel-body">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<button class="btn btn-primary">Read More</button>
+				</div>
+			</div>
+
+			<div class="col-sm-6">
+				<div class="panel panel-body">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<button class="btn btn-primary">Read More</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		 -->
