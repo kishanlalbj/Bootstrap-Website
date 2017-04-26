@@ -1,5 +1,4 @@
 var pb = angular.module('pitney',['ui.router'])
-
 .config(['$stateProvider','$urlRouterProvider',function($stateProvider,$urlRouterProvider){
 	$urlRouterProvider.otherwise('/index');
 
@@ -17,7 +16,8 @@ var pb = angular.module('pitney',['ui.router'])
 		url:'/home',
 		views :{
 			'content@':{
-				templateUrl:'home/homeTemp.html'
+				templateUrl:'home/homeTemp.html',
+				controller:'homeController'
 			}
 		}
 	})
@@ -39,21 +39,3 @@ var pb = angular.module('pitney',['ui.router'])
 	})
 }])
 
-pb.controller('mainController',['$scope','$state',function($scope,$state) {
-	$scope.signin = function(username,password) {
-		if(username == "kishanlalbj" && password == "password"){
-			$state.go("index.home");
-		}
-		else{
-			$scope.message = "Invalid Username or Passsword";
-		}
-
-	}
-
-	$scope.shipmentLabelList = ['USPS', 'FedEx', 'UPS'];
-	$scope.selectedShipLabel = 'USPS';
-	$scope.dropboxitemselected = function (item) {
-		$scope.selectedShipLabel = item;
-	}
-
-}])

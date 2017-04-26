@@ -5,9 +5,9 @@ app.use(express.static(__dirname + '/bower_components'));
 app.use(express.static(__dirname + '/public'));
 
 
-app.listen(8081,function(err,server) {
+app.listen(8080,function(err,server) {
 	if(err){
 		console.log(err)
 	}
-	console.log("Server running on 8081");
+	console.log("Server running on 8080");
 })
